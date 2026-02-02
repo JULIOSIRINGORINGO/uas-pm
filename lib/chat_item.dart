@@ -5,14 +5,14 @@ class ChatItem extends StatelessWidget {
   final String nama;
   final String jam;
   final String foto;
-  final String pesan; // Tambahkan variabel pesan
+  final String pesan; 
 
   const ChatItem({
     super.key, 
     required this.nama, 
     required this.jam, 
     required this.foto,
-    required this.pesan, // Masukkan ke constructor
+    required this.pesan, 
   });
 
   @override
@@ -57,11 +57,11 @@ class ChatItem extends StatelessWidget {
                       color: Colors.blue,
                     ),
                     const SizedBox(width: 5),
-                    Expanded( // Gunakan Expanded agar teks panjang tidak error
+                    Expanded( 
                       child: Text(
-                        pesan, // Menampilkan isi pesan yang dinamis
+                        pesan, 
                         style: const TextStyle(color: Colors.grey),
-                        overflow: TextOverflow.ellipsis, // Jika kepanjangan jadi titik-titik
+                        overflow: TextOverflow.ellipsis, 
                       ),
                     ),
                   ],
